@@ -86,11 +86,11 @@ p{
 .servis-box{
 	padding: 100px 0;
 }
-.home .wrapper1{
+.wrapper-left{
 	float: left;
 	width: 555px;
 }
-.home .wrapper2{
+.wrapper-right{
 	float: right;
 	width: 515px;
 }
@@ -130,4 +130,122 @@ p{
 	color: #222222;
 	font-weight: 500;
 	padding: 5px 0 17px;
+}
+
+.clients{
+	overflow: auto;
+	text-align: center;
+	background-color: #fafafa;
+}
+.clients h2{
+	padding: 100px 0 20px;
+}
+.clients p{
+	font-size: 16px;
+}
+.px19{
+	font-size: 19px;
+}
+ .clients .client-box{
+ 	position: relative;
+	margin: 52px 0 40px;
+	height: 235px;
+}
+.clients .client-box:last-child{
+	margin:0 0 98px;
+	height: 235px;
+}
+.clients .wrapper-right{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	overflow: auto;
+	margin: auto;
+	top: 0; right: 0; bottom: 0;
+	background: url(../img/Speak-Box-left.png);
+	width: 663px;
+	height: 175px;
+}
+.clients .wrapper-left{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	overflow: auto;
+	margin: auto;
+	top: 0; bottom: 0; left: 0;
+	background: url(../img/Speak-Box-right.png);
+	width: 663px;
+	height: 175px;
+}
+.circle1{
+	float: left;
+}
+.circle2{
+	float: right;
+}
+.wrapp{
+	margin: auto;
+	width: 479px;
+	height: 88px;
+	padding-top: 40px;
+	text-align: left;
+}
+.wrapp p{
+	font-size: 19px;
+	padding-bottom: 22px;
+}
+.wrapp a{
+	color: #7690c5;
+	text-decoration: none;
+}
+
+.logos{
+	height: 41px;
+	line-height: 41px;
+	font-size: 0;
+	text-align: center;
+	padding: 60px 0;
+}
+.logos img{
+	max-height: 41px;
+	padding-right: 40px;
+	vertical-align: middle;
+}
+.logos img:last-child{
+	padding: 0;
+}
+
+.team{
+	background-color: #111111;
+	padding: 100px 0;
+	text-align: center;
+}
+.team h2{
+	color: #ffffff;
+	padding-bottom: 22px;
+}
+.sub-title{
+	font-size: 16px;
+}
+.team-box{
+	display: inline-block;
+	padding: 80px 45px 50px 0;
+	width: 235px;
+}
+.team-box:last-child{
+	padding-right: 0;
+}
+.name{
+	color: #ffffff;
+	font-weight: 700;
+	padding: 19px 0 12px;
+}
+.title{
+	color: #ebebeb;
+	padding-bottom: 11px;
+}
+.description{
+	color: #ebebeb;
+	max-width: 590px;
+	margin: auto;
 }
