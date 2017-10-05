@@ -15,6 +15,7 @@ h2 span{
 	font-weight: 700;
 }
 p{
+	letter-spacing: -0.025em;
 	font-size: 13px;
 	font-weight: 400;
 	color: #777777;
@@ -248,4 +249,68 @@ p{
 	color: #ebebeb;
 	max-width: 590px;
 	margin: auto;
+}
+
+.contacts{
+	padding: 100px 0;
+	background-color: #7690c5;
+	overflow: auto;
+}
+.contacts h2{
+	color: #ffffff;
+}
+.contacts p{
+	color: #ffffff;
+}
+.contacts .sub-title{
+	padding: 35px 0 10px;
+	max-width: 415px;
+}
+.contact-item{
+	width: 230px;
+	height: 30px;
+	display: inline-block;
+	padding-top: 40px;
+}
+.wrap{
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding-right: 10px;
+	text-align: center;
+}
+.form{
+	float: right;
+	width: 470px;
+	height: 360px;
+}
+.form input{
+	font-size: 13px;
+	width: 455px;
+	height: 50px;
+	color: #bbbbbb;
+	font-weight: 400;
+}
+.form textarea{
+	width: 455px;
+	height: 210px;
+	color: #bbbbbb;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+
+}
+#adress{
+	margin: 30px 0 20px;
+}
+
+
+.footer{
+	height: 80px;
+	background-color: #7690c5;
+	text-align: center;
+}
+.footer p{
+	font-size: 12px;
+	line-height: 80px;
+	color: #ffffff;
 }
