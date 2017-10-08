@@ -28,13 +28,13 @@ p{
 	clear: both;
 }
 .container{
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 }
 .header{
 	position: relative;
 	height: 620px;
-	background: url(../img/header-bg.png) center;
+	background: url(../img/header-bg.png) center no-repeat;
 	color: #ffffff;
 	text-align: center;
 }
@@ -85,13 +85,15 @@ p{
 
 
 .home .container{
-	width: 860px;
+	max-width: 860px;
 }
 .servis-box{
 	padding: 94px 0;
 }
+.servis-box .wrapper-right{
+	padding-right: 20px;
+}
 .wrapper-left{
-	padding-left: 0px;
 	float: left;
 	width: 555px;
 }
@@ -112,7 +114,7 @@ p{
 	height: 222px;
 }
 .ico2{
-	padding: 24px 0 0;
+	padding-top: 24px;
 	float: left;
 	width: 270px;
 	height: 195px;
@@ -121,8 +123,8 @@ p{
 	padding: 100px 0;
 }
 .skill-item{
-	display: inline-block;
-	height: 143px;
+	display: block;
+	height: 147px;
 }
 .skill-item-wrap{
 	width: 285px;
@@ -163,36 +165,29 @@ p{
 	margin: 0px 0 90px;
 	height: 235px;
 }
-.clients .wrapper-right{
+.clients .wrapper-right, .clients .wrapper-left{
 	position: absolute;
-	width: 50%;
-	height: 50%;
-	overflow: auto;
-	margin: auto;
-	top: 0px;
-	right: 21px;
-	bottom: 0;
-	background: url(../img/Speak-Box-left.png) no-repeat;
-	width: 676px;
 	height: 175px;
-}
-.clients .wrapper-left{
-	position: absolute;
-	width: 50%;
-	height: 50%;
 	overflow: auto;
 	margin: auto;
 	top: 0;
 	bottom: 0;
+}
+.clients .wrapper-right{
+	right: 21px;
+	background: url(../img/Speak-Box-left.png) no-repeat;
+	width: 676px;
+	
+}
+.clients .wrapper-left{
 	left: 32px;
 	background: url(../img/Speak-Box-right.png) no-repeat;
 	width: 665px;
-	height: 175px;
 }
-.circle1{
+.circle1, .left-colum{
 	float: left;
 }
-.circle2{
+.circle2, .right-colum{
 	float: right;
 }
 .wrapp{
@@ -266,7 +261,7 @@ p{
 }
 
 .contacts{
-	padding: 93px 0 0px;
+	padding-top: 93px;
 	background-color: #7690c5;
 	overflow: auto;
 }
@@ -274,10 +269,7 @@ p{
 	height: 467px;
 	border-bottom: 1px solid #87a0d2;
 }
-.contacts h2{
-	color: #ffffff;
-}
-.contacts p{
+.contacts h2, .contacts p{
 	color: #ffffff;
 }
 .contacts .sub-title{
@@ -297,28 +289,29 @@ p{
 	padding-right: 10px;
 	text-align: center;
 }
-.form{
+.forma{
 	float: right;
 	width: 458px;
 	height: 360px;
-}
-.form input{
 	margin-top: 5px;
+}
+.forma input[type="text"], .forma textarea{
+	color: #bbbbbb;
+	font-weight: 400;
+}
+.forma input[type="text"]{
 	font-size: 13px;
 	width: 455px;
 	height: 47px;
-	color: #bbbbbb;
-	font-weight: 400;
 }
-.form textarea{
+.forma textarea{
 	width: 452px;
-	height: 208px;
-	color: #bbbbbb;
-	font-weight: 400;
+	height: 205px;
 	font-family: 'Roboto', sans-serif;
+	resize: none;
 }
 #adress{
-	margin: 25px 0 17px;
+	margin: 25px 0 18px;
 }
 
 
@@ -331,4 +324,72 @@ p{
 	font-size: 15px;
 	line-height: 77px;
 	color: #ffffff;
+}
+
+@media screen and (max-width:1000px) {
+	.container{
+		padding: 0 30px;
+	}
+	.header{
+		height: 530px;
+	}
+	.header p{
+		padding-top: 115px;
+	}
+	.ico1, .ico2{
+		display: none;
+	}
+	.servis-box, .team{
+	padding: 50px 0;
+	}
+	.wrapper-left, .wrapper-right{
+		width: auto;
+	}
+	.skills {
+	padding: 50px 0;
+	}
+	.skill-item-wrap{
+		width: 275px;
+	}
+	.clients h2 {
+	padding: 20px 0 9px;
+	}
+	.clients .client-box:last-child {
+	margin: 0px 0 50px;
+	}
+	.clients .wrapper-right, .clients .wrapper-left{
+		background: none;
+		position: static;
+		width: auto;
+	}
+	.logos{
+		padding: 30px 0;
+	}
+	.logos img{
+		padding-right: 25px;
+	}
+	.team-box{
+	padding-top: 35px;
+	width: 244px;
+	}
+	.contacts{
+		padding-top: 50px;
+	}
+	.contacts .container{
+		height: 430px;
+	}
+	.contact-item{
+		width: 190px;
+		padding-top: 10px;
+	}
+	.forma{
+		width: 50%;
+	}
+	.forma input[type="text"], .forma textarea{
+		width: 100%;
+	}
+	.wrapp{
+		padding-top: 70px;
+	}
+
 }
