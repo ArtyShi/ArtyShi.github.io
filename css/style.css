@@ -110,14 +110,14 @@ p{
 .ico1{
 	padding: 15px 10px 0 0;
 	float: right;
-	width: 221px;
-	height: 222px;
+	max-width: 221px;
+	height: auto;
 }
 .ico2{
 	padding-top: 24px;
 	float: left;
-	width: 270px;
-	height: 195px;
+	max-width: 270px;
+	height: auto;
 }
 .skills{
 	padding: 100px 0;
@@ -289,29 +289,48 @@ p{
 	padding-right: 10px;
 	text-align: center;
 }
+
+.content{
+	float: left;
+	width: 50%;
+}
 .forma{
 	float: right;
 	width: 458px;
 	height: 360px;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .forma input[type="text"], .forma textarea{
-	color: #bbbbbb;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 458px;
+	height: 52px;
+	padding: 15px 22px;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-}
-.forma input[type="text"]{
-	font-size: 13px;
-	width: 455px;
-	height: 47px;
+	font-size: 15px;
+	color: #bbbbbb;
+	background: #ffffff;
+	box-shadow: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: 400;
+	-webkit-border: 1px solid #cccccc;
+	-moz-border: 1px solid #cccccc;
+	-ms-border: 1px solid #cccccc;
+	-o-border: 1px solid #cccccc;
+	border: 1px solid #cccccc;
 }
 .forma textarea{
-	width: 452px;
-	height: 205px;
-	font-family: 'Roboto', sans-serif;
+	height: 210px;
 	resize: none;
 }
 #adress{
-	margin: 25px 0 18px;
+	margin: 28px 0 19px;
 }
 
 
@@ -327,6 +346,12 @@ p{
 }
 
 @media screen and (max-width:1000px) {
+	h1{
+		font-size: 55px;
+	}
+	h2{
+		font-size: 40px;
+	}
 	.container{
 		padding: 0 30px;
 	}
@@ -335,27 +360,38 @@ p{
 	}
 	.header p{
 		padding-top: 115px;
+		font-size: 30px;
 	}
-	.ico1, .ico2{
-		display: none;
+	.home h2{
+		padding-bottom: 25px;
+	}
+	.first{
+		padding-bottom: 15px;
+	}
+	.ico1{
+		width: 29%;
+		padding-right: 0;
+	}
+	.ico2{
+		width: 26%;
 	}
 	.servis-box, .team{
-	padding: 50px 0;
+		padding: 50px 0;
 	}
 	.wrapper-left, .wrapper-right{
-		width: auto;
+		width: 70%;
 	}
 	.skills {
-	padding: 50px 0;
+		padding: 50px 0;
 	}
 	.skill-item-wrap{
 		width: 275px;
 	}
 	.clients h2 {
-	padding: 20px 0 9px;
+		padding: 20px 0 9px;
 	}
 	.clients .client-box:last-child {
-	margin: 0px 0 50px;
+		margin: 0px 0 50px;
 	}
 	.clients .wrapper-right, .clients .wrapper-left{
 		background: none;
@@ -369,8 +405,8 @@ p{
 		padding-right: 25px;
 	}
 	.team-box{
-	padding-top: 35px;
-	width: 244px;
+		padding-top: 35px;
+		width: 244px;
 	}
 	.contacts{
 		padding-top: 50px;
@@ -379,8 +415,9 @@ p{
 		height: 430px;
 	}
 	.contact-item{
-		width: 190px;
-		padding-top: 10px;
+		width: 179px;
+		padding-top: 25px;
+		padding-right: 0;
 	}
 	.forma{
 		width: 50%;
@@ -388,8 +425,122 @@ p{
 	.forma input[type="text"], .forma textarea{
 		width: 100%;
 	}
-	.wrapp{
-		padding-top: 70px;
+	.wrap{
+		width: 27px;
+		padding-right: 2px;
 	}
+	.wrapp{
+		padding: 70px 25px 0 0;
+	}
+}
 
+@media screen and (max-width:800px) {
+	h1{
+		font-size: 40px;
+		padding: 30px 0 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.header{
+		height: 400px;
+	}
+	.header p{
+		padding-top: 80px;
+		font-size: 25px;
+	}
+	.button{
+		width: 197px;
+	}
+	.wrapper-left, .wrapper-right{
+		width: auto;
+	}
+	.servis-box, .skills{
+		padding-bottom: 0;
+	}
+	.skills{
+		padding-bottom: 20px;
+	}
+	.skill-item-wrap{
+		width: 84%;
+	}
+	.skill-item{
+		height: auto;
+		padding-bottom: 15px;
+	}
+	.wrapp{
+		padding: 45px 0 0;
+		width: 400px;
+	}
+	.wrapp p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.wrapp a{
+		font-size: 16px;
+	}
+	.ico1, .ico2{
+		display: none;
+	}
+	.clients .client-box{
+		height: auto;
+		margin: 30px 0 20px;
+	}
+	.clients .client-box:last-child{
+		margin: 0 0 20px;
+		height: auto;
+	}
+	.circle1, .circle2{
+		width: 30%;
+	}
+	.logos{
+		height: auto;
+		padding: 15px 0;
+	}
+	.logos img{
+		width: 21%;
+	}
+	.sub-title{
+		font-size: 18px;
+	}
+	.team-box{
+		width: 190px;
+	}
+	.team-box img{
+		width: 100%;
+	}
+	.social-box{
+		width: 100%;
+	}
+	.social-box img{
+		width: 24%;
+	}
+	.description{
+		font-size: 17px;
+	}
+	.contacts .container{
+		height: auto;
+		overflow: auto;
+	}
+	.forma{
+		float: none;
+		width: auto;
+		margin-top: 20px;
+	}
+	.content{
+		float: none;
+		width: auto;
+	}
+	.contacts .sub-title{
+		font-size: 16px;
+	}
+	.contact-item{
+		width: 190px;
+		padding-bottom: 5px;
+		
+	}
+}
+
+@media screen and (max-width:640px){
+	
 }
